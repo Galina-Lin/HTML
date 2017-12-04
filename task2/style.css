@@ -1,0 +1,151 @@
+/*导航*/
+.nav{
+	background-color: #333;
+	padding: 0 20px 0 30px;
+	height: 60px;
+	position: relative;
+}
+.nav img{
+	position: absolute;
+	float: left;
+	margin: 11px 0;
+}
+.nav ul{
+	list-style-type: disc;
+	list-style-position: inside;
+}
+.nav li{
+	float: right;
+	display: inline;
+	line-height: 60px;
+	font-size: 10px;
+	margin: 0 10px;
+}
+.nav li a{
+	color: #fff;
+	text-decoration: none;
+}
+/*字体*/
+p{
+	text-indent: 2em;
+	font-size: 14px;
+    line-height: 2em;
+}
+h1{
+	font-size: 20px;
+}
+h2{
+	font-size: 16px;
+	color: #646464;
+}
+address{
+	font-size: 10px;
+	color: #ACACAC;
+	font-style: normal;
+}
+/*框架*/
+.main{
+	background-color: #DEDEDE;
+	padding: 20px;
+	margin: 0;
+}
+.first, .another, .pic, .last, .sidebar{
+    margin-bottom: 20px;
+    padding: 30px 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px #848484;
+    position: relative;
+}
+.first a, .another a{
+    color: #0500E7;
+}
+/*图片*/
+.first img{
+	height: 300px;
+}
+.pic dd{
+	text-align: center;
+	position: relative;
+	display: block;
+	border: 1px solid #C3C3C3;
+	padding: 10px;
+	width: 100px;
+	height: 114px;
+}
+.pic img{
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	width: 100px;
+	height: 80px;
+}
+/*表格*/
+table{
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+th,td{
+	width: 33.3%;
+	border: 1px solid #E6E6E6;
+	height: 24px;
+	padding-left: 5px;
+}
+th{
+	background-color: #333;
+	color: #fff;
+}
+td.gray{
+	background-color: #CCC;
+}
+/*表单*/
+form{
+	display: table;
+	margin: 0 auto;
+}
+form textarea{
+	width: 600px;
+	height: 100px;
+}
+.tableRow{
+	display: table-row;
+	width: 100%;
+}
+.tableRow p{
+	display: table-cell;
+	vertical-align: top;
+	padding: 5px;
+	text-indent: 0;
+}
+.tableRow p:first-child{
+    text-align: right;
+    width: 30%;
+}
+.tableRow span{
+	color: #555;
+}
+.sub{
+	display: block;
+	height: 40px;
+	width: 100%;
+	border-radius: 10px;
+	background-color: #3355D0;
+	color: #fff;
+	border: 0;
+}
+/*文末*/
+.sidebar{
+	margin-bottom: 0;
+}
+.footer{
+	text-align: center;
+	color: #fff;
+	height: 70px;
+	background-color: #000;
+	margin-top: -20px; 
+}
+.footer p{
+	font-size: 12px;
+	line-height: 70px;
+}
