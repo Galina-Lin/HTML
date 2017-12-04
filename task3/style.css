@@ -1,0 +1,40 @@
+body{
+	padding: 20px;
+	font-size: 12px;
+}
+div{
+	padding: 20px;
+	border: 1px solid #999;
+}
+.main{
+	background-color: #eee;
+	overflow: hidden;
+}
+.left{
+	float: left;
+	width: 158px;
+	background-color: #fff;
+}
+.team{
+	border: 0;
+	padding: 0;
+	margin-left: 100px;
+}
+.logo{
+	width: 38px;
+	height: 38px;
+	background-color: #eee;
+	float: left;
+}
+.add{
+	margin-top: 20px;
+}
+.right{
+	float: right;
+    width: 78px;
+    background-color: #fff;
+}
+.middle{
+	margin: 0 140px 0 220px;
+	background-color: #fff;
+}
