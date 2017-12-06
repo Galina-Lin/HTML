@@ -1,3 +1,5 @@
+body,ul,dl,dd,h1,h2,h3,h4,h5,h6,p,input,select,textarea,form{margin: 0; padding: 0;}
+body{font:12px/2 "宋体";}
 /*导航*/
 .nav{
 	background-color: #333;
@@ -26,10 +28,8 @@
 	text-decoration: none;
 }
 /*字体*/
-p{
+p,ul{
 	text-indent: 2em;
-	font-size: 14px;
-    line-height: 2em;
 }
 h1{
 	font-size: 20px;
@@ -60,10 +60,10 @@ address{
 .first a, .another a{
     color: #0500E7;
 }
-/*图片*/
-.first img{
-	height: 300px;
+.another ul{
+	list-style-type: none;
 }
+/*图片*/
 .pic dd{
 	text-align: center;
 	position: relative;
@@ -79,6 +79,9 @@ address{
 	bottom: 10px;
 	width: 100px;
 	height: 80px;
+}
+.pic dl{
+	margin-left: 32px;
 }
 /*表格*/
 table{
@@ -98,6 +101,13 @@ th{
 }
 td.gray{
 	background-color: #CCC;
+}
+/*侧栏*/
+.sidebar h2{
+	display: block;
+    color: #000;
+    border-left: 3px solid #ccc;
+    padding: 10px;
 }
 /*表单*/
 form{
@@ -126,13 +136,11 @@ form textarea{
 	color: #555;
 }
 .sub{
-	display: block;
 	height: 40px;
 	width: 100%;
 	border-radius: 10px;
 	background-color: #3355D0;
 	color: #fff;
-	border: 0;
 }
 /*文末*/
 .sidebar{
@@ -143,7 +151,6 @@ form textarea{
 	color: #fff;
 	height: 70px;
 	background-color: #000;
-	margin-top: -20px; 
 }
 .footer p{
 	font-size: 12px;
