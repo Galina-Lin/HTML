@@ -1,0 +1,190 @@
+body,ul,dl,dd,h1,h2,h3,h4,h5,h6,p,input,select,textarea,form{margin: 0; padding: 0;}
+body{font:12px/2 "宋体";}
+/*导航*/
+nav{
+	background-color: #333;
+	padding: 0 20px 0 30px;
+	height: 60px;
+	width: 100%;/*task5*/
+	position: relative;
+}
+nav img{
+	display: block;
+	float: left;
+	margin: 11px 0;
+	width: 10%;
+}
+nav ul{
+	list-style-type: disc;
+	list-style-position: inside;
+}
+nav li{
+	float: right;
+	display: inline;
+	line-height: 60px;
+	font-size: 10px;
+	margin: 0 10px;
+}
+nav li a{
+	color: #fff;
+	text-decoration: none;
+}
+/*字体*/
+p,ul{
+	text-indent: 2em;
+}
+h1{
+	font-size: 20px;
+}
+h2{
+	font-size: 16px;
+	color: #646464;
+}
+address{
+	font-size: 10px;
+	color: #ACACAC;
+	font-style: normal;
+}
+/*框架*/
+main{
+	background-color: #DEDEDE;
+	padding: 20px;
+	margin: 0;
+}
+
+article{
+	margin-right: 430px; 
+}
+section, aside{
+    margin-bottom: 20px;
+    padding: 30px 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px #848484;
+	position: relative;
+}
+
+.first a, .another a{
+    color: #0500E7;
+}
+.another ul{
+	list-style-type: none;
+}
+/*图片*/
+/*.pic dd{
+	text-align: center;
+	position: relative;
+	display: block;
+	border: 1px solid #C3C3C3;
+	padding: 10px;
+	width: 10%;
+	width: 100px;
+	height: 114px;
+}
+.pic img{
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	width: 100%;
+	width: 100px;
+	height: 80px;
+}
+.pic dl{
+	margin-left: 32px;
+}*/
+.pic{
+	overflow: hidden;
+}
+.pic .images{
+	display: inline-block;
+	float: left;
+    width: 12%;
+    border: 1px solid #ccc;
+    padding: 11px;
+    margin: 0 0 15px 15px;
+    text-align: center;
+}
+.pic .images span{
+    font-size: 12px;
+}
+.pic .images img{
+    margin-top: 10px;
+    width: 100%;
+}
+/*表格*/
+.last{
+	clear: both;
+}
+table{
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+th,td{
+	width: 33.3%;
+	border: 1px solid #E6E6E6;
+	height: 24px;
+	padding-left: 5px;
+}
+th{
+	background-color: #333;
+	color: #fff;
+}
+td.gray{
+	background-color: #CCC;
+}
+/*侧栏*/
+aside h2{
+	display: block;
+    color: #000;
+    border-left: 3px solid #ccc;
+    padding: 10px;
+}
+/*表单*/
+form{
+	display: table;
+	margin: 0 auto;
+}
+form textarea{
+	height: 100px;
+}
+.tableRow{
+	display: table-row;
+	width: 100%;
+}
+.tableRow p{
+	display: table-cell;
+	vertical-align: top;
+	padding: 5px;
+	text-indent: 0;
+}
+.tableRow p:first-child{
+    text-align: right;
+    width: 40%;
+}
+.tableRow span{
+	color: #555;
+}
+.sub{
+	height: 40px;
+	width: 100%;
+	border-radius: 10px;
+	background-color: #3355D0;
+	color: #fff;
+}
+
+aside{
+	float: right;
+	width: 360px;
+}
+footer{
+	text-align: center;
+	color: #fff;
+	height: 70px;
+	width: 100%;/*task5*/
+	background-color: #000;
+}
+footer p{
+	font-size: 12px;
+	line-height: 70px;
+}
