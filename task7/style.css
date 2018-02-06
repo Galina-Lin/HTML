@@ -24,6 +24,9 @@ header{
 	padding: 0 60px;
 	height: 55px;
 }
+header a{
+	color: #787b83;
+}
 .logo{
 	font-size: 21px;
 	float: left;
@@ -38,8 +41,8 @@ nav li{
 	line-height: 55px;
 	text-align: center;
 }
-nav a{
-	color: #787b83;
+nav li:hover{
+	border-bottom: 5px solid #e74f4d;
 }
 /*登录图标*/
 .signin{
@@ -49,7 +52,6 @@ nav a{
 }
 /*当前页面*/
 .now_page{
-	color: #e74f4d;
 	border-bottom: 5px solid #e74f4d;
 }
 
@@ -146,16 +148,19 @@ nav a{
 }
 .section4 select, .section4 input{
 	color: #b5b7b7;
-	display: inline-block;
 	width: 218px;
 	height: 36px;
 	padding: 9px;
-	border: 1px solid #be4e48;
 	background-color: #fff;
 	margin: 0 14px;
+	border: 1px solid #be4e48;
 }
+
 .section4 input{
-	background-color: #be4e48; 
+	cursor: pointer;
+	color: #fff;
+	background-color: #be4e48;
+	border-width: 1px;
 }
 
 .section5{
@@ -225,6 +230,7 @@ nav a{
 	color: #e95a58;
 }
 .btn{
+	cursor: pointer;
 	position: absolute;
 	left: 50%;
 	margin-left: -52px;
@@ -265,6 +271,7 @@ nav a{
 }
 .box .btn{
 	margin-top: 15px;
+	cursor: pointer;
 }
 .box1{
 	color: #fff;
@@ -313,14 +320,16 @@ nav a{
 	color: #231815;
 	padding: 20px 0 37px 0;
 }
-.leftb span{
+.leftb a{
 	float: right;
+	color: #000;
 }
 .bottom_right{
 	float: right;
 	width: 670px;
 }
 .bottom_right input{
+	border: none;
 	width: 279px;
 	height: 40px;
 	margin: 0 0 15px 20px;
@@ -328,6 +337,7 @@ nav a{
 	background-color: #edecee;
 }
 .bottom_right textarea{
+	border: none;
 	width: 613px;
 	height: 120px;
 	background-color: #edecee;
@@ -335,8 +345,9 @@ nav a{
 	padding: 10px 15px;
 }
 .bottom_right .adm{
-	width: 613px;
+	width: 643px;
 	text-align: center;
+	cursor: pointer;
 }
 footer .contact{
 	color: #fff;
@@ -361,6 +372,9 @@ footer .contact{
 	text-align: left;
 }
 .address .emil{
+	height: 11px;
+	width: 400px;
+	border: none;
 	padding: 15px;
 }
 .address .adit{
@@ -368,13 +382,15 @@ footer .contact{
 	width: 80px;
 	height: 41px;
 	background-color: #6f7278;
+	cursor: pointer;
 }
+
 .banner{
 	color: #fff;
 	height: 57px;
 	background-color: #303039;
 }
-.banner p {
+.banner p, .banner a{
 	height: 57px;
 	line-height: 57px;
 }
@@ -385,4 +401,5 @@ footer .contact{
 .p2{
 	float: right;
 	margin-right: 30px;
+	color: #fff;
 }
