@@ -1,0 +1,34 @@
+.parent{
+	display: flex;
+	padding: 20px;
+	justify-content: space-between;
+	align-items: center;
+}
+.child{
+	width: 150px;
+	border-width: 1px;
+	border: 1px solid #f00;
+	margin-bottom: 20px;
+}
+.child1{
+	height: 120px;
+}
+.child2{
+	height: 100px;
+}
+.child3{
+	height: 40px;
+}
+.child4{
+	height: 200px;
+	border-color: #00f;
+}
+@media screen and (max-width: 640px){
+	.parent{
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	.child4{
+		order: -1;
+	}
+}
