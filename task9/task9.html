@@ -11,9 +11,8 @@
 		<a href="#" class="login"><span></span>登录</a>
 		<div class="search"><span></span><input type="text"></div>
 	</header>
-	<div class="main">
-		<!-- 左侧栏 -->
-		<aside class="account_info">
+	<!-- 左侧栏 -->
+	<aside>
 			<!-- 个人信息 -->
 			<div class="information">
 				<!-- 头像昵称 -->
@@ -56,8 +55,8 @@
 				<li class="li1"><img src="images/grow.png" alt="grow_icon" class="listimg"><span>成长经历</span></li>
 				<li class="li1"><img src="images/account.png" alt="account_icon" class="listimg"><span>账户信息</span></li>
 			</ul>
-		</aside>
-		<div class="content">
+	</aside>
+	<main>
 			<!-- 导航 -->
 			<div class="nav">
 				<a href="#">C站</a><span>/</span>
@@ -245,23 +244,23 @@
 								<div class="row">
 								    <div class="col">
 										<label for="form_title">标题</label>
-										<input type="text" name="form_title" value="项目报表三">
+										<input type="text" name="form_title" placeholder="项目报表三">
 									</div>
 								</div>
 								<div class="row">
 								    <div class="col col_price">
 										<label for="price">价格</label>
-										<input type="text" name="price" value="￥158">
+										<input type="text" name="price" placeholder="￥158">
 									</div>
 									<div class="col col_leader">
 										<label for="leader">负责人</label>
-										<input type="text" name="leader" value="小A">
+										<input type="text" name="leader" placeholder="小A">
 									</div>
 								</div>
 								<div class="row">
 								    <div class="col">
 								    	<label for="leader">详细描述</label>
-								        <textarea name="leader" id="leader">该项目目前负责人是......</textarea>
+								        <textarea name="leader" id="leader" placeholder="该项目目前负责人是......"></textarea>
 									</div>
 								</div>
 								<div class="row row_submit">
@@ -566,7 +565,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
+	</main>
 </body>
 </html>

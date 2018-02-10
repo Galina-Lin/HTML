@@ -39,6 +39,11 @@ header{
 .search input{
 	line-height: 28px;
 }
+@media screen and (max-width: 560px){
+	.search{
+		display: none;
+	}
+}
 .search span{
 	float: left;
 	width: 17px;
@@ -128,7 +133,7 @@ img.listimg{
 	margin-right: 13px;
 }
 /*右侧内容*/
-.content{
+main{
 	box-sizing: border-box;
 	width: 1349px;
 	padding-left: 261px;
@@ -265,7 +270,7 @@ img.listimg{
 
 /*4月统计一栏*/
 .count{
-	height: 83px;
+	overflow: hidden;
 	margin-bottom: 15px;
 }
 /*每个统计小框*/
@@ -325,11 +330,14 @@ img.listimg{
 }
 
 /*项目材料表格*/
+.items{
+	overflow: hidden;
+}
 .item{
-	border-radius: 10px;
 	height: 355px;
 	float: left;
 	border: 1px solid #c4c7cc;
+	border-radius: 10px;
 	background-color: #fff;
 	margin-right: 8px;
 }
@@ -421,12 +429,14 @@ img.listimg{
 	color: #c3c2c2;
 	line-height: 17px;
 }
-.search_form .col input,.search_form .col textarea{
+.search_form .col input,.search_form .col textarea
+{
+
 	color: #535353;
 	font-family: "微软雅黑";
 	line-height: 26px;
-	padding-left: 14px;
-	width: 100%
+	padding: 0 14px;
+	width: 10
 }
 .search_form .col textarea{
 	height: 109px;
