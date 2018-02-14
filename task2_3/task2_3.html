@@ -41,7 +41,7 @@ function getData() {
   var source = document.getElementById("source");
   var s_li = source.getElementsByTagName("li");
   var data = [];
-  for(var i=0; i<s_li.length; i++){
+  for(var i = 0; i < s_li.length; i++){
     var city = s_li[i].innerText.substring(0, 2);
     var num = s_li[i].innerText.split("：")[1];
     data.push([city,num]);

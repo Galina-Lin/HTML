@@ -36,10 +36,10 @@ var aqiData = [
   var i = 0;
   var ul = document.getElementById("aqi-list");
   var number = ["一","二","三","四","五","六"];
-  for (var j=0; j<aqiData.length; j++) {
-    if(aqiData[j][1]>60){
+  for (var j = 0; j < aqiData.length; j++) {
+    if(aqiData[j][1] > 60){
       var li = document.createElement("li");
-      var text = document.createTextNode("第"+number[i]+"名："+aqiData[j][0]+"，"+aqiData[j][1]);
+      var text = document.createTextNode("第" + number[i] + "名：" + aqiData[j][0] + "，" + aqiData[j][1]);
       li.appendChild(text);
       ul.appendChild(li);
       i++;
