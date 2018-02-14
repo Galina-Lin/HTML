@@ -20,6 +20,7 @@
   在事件处理函数中
   获取aqi-input输入的值，并显示在aqi-display中
   */
+  //封装 document.getElementById(id)
   var $ = function(id){
     return document.getElementById(id);
   }
@@ -30,6 +31,7 @@
   $("button").onclick = function(){
     handler();
   };
+  //键盘 enter 键按下时也要触发
   $("aqi-input").onkeyup = function(event){
     if (event.keyCode === 13) {
       handler();
