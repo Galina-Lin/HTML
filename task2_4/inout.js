@@ -52,16 +52,16 @@ function queueOut(id){
 function deleteLi() {
 	console.log(111)
 	var lis = $("list").getElementsByTagName('li');
-    console.log(lis)
+    	console.log(lis)
 	if(lis.length){
-    console.log(222)
+    	console.log(222)
 		for (var i = lis.length - 1; i >= 0; i--) {
 			// console.log(i)
 			//立即执行的办法
 			(function(){
 				var j = i;
 				lis[j].onclick=function(){
-	                console.log('点击了')
+	                		console.log('点击了')
 					console.log(lis[j])
 					$("list").removeChild(lis[j]);
 					deleteLi();
