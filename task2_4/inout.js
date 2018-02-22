@@ -1,6 +1,7 @@
 window.onload=function(){
 	$("leftIn").onclick = $("rightIn").onclick = function(){
 		queueIn(this.id);
+		deleteLi();
 	};
 	$("leftOut").onclick = $("rightOut").onclick = function(){
 		queueOut(this.id);
@@ -31,9 +32,9 @@ function queueIn(id){
 		else if(id=="rightIn"){
 			$("list").appendChild(li);
 		}
-		li.onclick = function(){
-			$("list").removeChild(this);
-		}
+		// li.onclick = function(){
+		// 	$("list").removeChild(this);
+		// }
 	}
 	$("input").value = '';
 }
@@ -47,16 +48,32 @@ function queueOut(id){
 	}
 	$("list").removeChild(outLi);
 }
-// // 找不到错在哪里,没有实现 点击队列中任何一个元素，该元素从队列中删除
-// function deleteLi() {
-// 	var lis = $("list").getElementsByTagName('li');
-// 	if(lis.length){
-// 		for (var i = lis.length - 1; i >= 0; i--) {
-// 			(function(){
-// 				lis[i].onclick=function(){
-// 					$("list").removeChild(lis[i]);
-// 				}
-// 			})();
-// 		}
-// 	}
-// }
+// 找不到错在哪里,没有实现 点击队列中任何一个元素，该元素从队列中删除
+function deleteLi() {
+	console.log(111)
+	var lis = $("list").getElementsByTagName('li');
+    console.log(lis)
+	if(lis.length){
+    console.log(222)
+		for (var i = lis.length - 1; i >= 0; i--) {
+			// console.log(i)
+			//立即执行的办法
+			(function(){
+				var j = i;
+				lis[j].onclick=function(){
+	                console.log('点击了')
+					console.log(lis[j])
+					$("list").removeChild(lis[j]);
+					deleteLi();
+				}
+			})();
+			// 块级作用域的办法
+			// let j = i;
+			// lis[j].onclick=function(){
+			// 	console.log(lis[j])
+			// 	$("list").removeChild(lis[j]);
+			// 	deleteLi()
+			// }
+		}
+	}
+}
